@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RootNamespace>AElf.Contracts.DigitalIDContract</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <IsContract>true</IsContract>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <ContractCode Include="..\..\protobuf\digitalID.proto">
+            <Link>Protobuf\Proto\digitalID.proto</Link>
+        </ContractCode>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="Protobuf\Generated" />
+    </ItemGroup>
+</Project>
